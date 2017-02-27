@@ -108,7 +108,7 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#101010",
-	"#657b83",
+	"#7a9098",
 };
 
 
@@ -117,6 +117,8 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 static unsigned int defaultfg = 257;
+static unsigned int defaultitalic = 257;
+static unsigned int defaultunderline = 257;
 static unsigned int defaultbg = 256;
 static unsigned int defaultcs = 6;
 static unsigned int defaultrcs = 256;
@@ -177,7 +179,6 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 };
 
 /*
